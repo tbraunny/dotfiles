@@ -86,3 +86,8 @@ alias meminfo='free -m -l -t'
 
 # nav to windows mount
 alias windows='cd /mnt/c/Users/thoma'
+
+# Ollama shortcuts
+alias coder="ollama run coder"
+alias ops="ollama ps"
+alias ollog="journalctl --user -u ollama -f"
