@@ -1,0 +1,1104 @@
+--- Startup times for process: Primary (or UI client) ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.006  000.006: --- NVIM STARTING ---
+000.307  000.301: event init
+000.449  000.142: early init
+002.315  001.866: locale set
+002.379  000.064: init first window
+003.130  000.751: inits 1
+003.147  000.017: window checked
+003.151  000.004: parsing arguments
+003.778  000.062  000.062: require('vim.shared')
+003.915  000.055  000.055: require('vim.inspect')
+003.977  000.052  000.052: require('vim._options')
+003.983  000.200  000.093: require('vim._editor')
+003.985  000.300  000.039: require('vim._init_packages')
+003.987  000.536: init lua interpreter
+027.431  023.444: nvim_ui_attach
+027.919  000.488: nvim_set_client_info
+027.924  000.005: --- NVIM STARTED ---
+
+--- Startup times for process: Embedded ---
+
+times in msec
+ clock   self+sourced   self:  sourced script
+ clock   elapsed:              other lines
+
+000.006  000.006: --- NVIM STARTING ---
+002.017  002.011: event init
+002.173  000.155: early init
+004.109  001.937: locale set
+004.170  000.061: init first window
+004.817  000.647: inits 1
+004.852  000.035: window checked
+004.859  000.007: parsing arguments
+005.537  000.057  000.057: require('vim.shared')
+005.663  000.050  000.050: require('vim.inspect')
+005.722  000.049  000.049: require('vim._options')
+005.728  000.186  000.087: require('vim._editor')
+005.730  000.283  000.040: require('vim._init_packages')
+005.732  000.590: init lua interpreter
+007.268  001.536: expanding arguments
+007.301  000.033: inits 2
+007.637  000.335: init highlight
+007.639  000.003: waiting for UI
+011.885  004.246: done waiting for UI
+011.912  000.027: clear screen
+012.226  000.044  000.044: require('vim.keymap')
+013.292  000.157  000.157: sourcing nvim_exec2()
+015.795  002.250  002.250: require('vim.termcap')
+015.833  000.018  000.018: require('vim.text')
+016.370  004.448  001.980: require('vim._defaults')
+016.374  000.014: init default mappings & autocommands
+016.685  000.184  000.184: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/ftplugin.vim
+016.979  000.117  000.117: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/indent.vim
+019.975  000.006  000.006: require('vim.F')
+020.006  001.626  001.620: require('vim.diagnostic')
+020.068  002.628  001.002: require('core.keymaps')
+020.382  000.312  000.312: require('core.options')
+024.101  003.626  003.626: require('lazy')
+024.418  000.310  000.310: require('plugins.neotree')
+024.672  000.249  000.249: require('plugins.colortheme')
+025.009  000.332  000.332: require('plugins.bufferline')
+025.367  000.353  000.353: require('plugins.lualine')
+025.756  000.385  000.385: require('plugins.telescope')
+026.167  000.406  000.406: require('plugins.lsp')
+026.237  000.032  000.032: require('ffi')
+026.338  000.046  000.046: require('vim.fs')
+026.788  000.369  000.369: require('vim.uri')
+026.819  000.576  000.162: require('vim.loader')
+027.657  000.789  000.789: require('lazy.stats')
+028.433  000.731  000.731: require('lazy.core.util')
+029.029  000.591  000.591: require('lazy.core.config')
+029.991  000.476  000.476: require('lazy.core.handler')
+031.056  000.309  000.309: require('lazy.pkg')
+031.062  000.659  000.350: require('lazy.core.meta')
+031.068  001.073  000.413: require('lazy.core.plugin')
+031.077  002.043  000.494: require('lazy.core.loader')
+031.843  000.494  000.494: require('lazy.core.fragments')
+034.342  000.256  000.256: require('lazy.core.handler.event')
+034.347  000.500  000.244: require('lazy.core.handler.ft')
+034.569  000.218  000.218: require('lazy.core.handler.keys')
+034.880  000.306  000.306: require('lazy.core.handler.cmd')
+036.132  000.635  000.635: sourcing nvim_exec2() called at /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua:0
+036.147  000.991  000.356: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua
+036.178  001.141  000.149: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+036.374  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+036.410  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+041.485  000.229  000.229: require('nord.named_colors')
+041.513  000.657  000.428: require('nord.colors')
+041.570  003.720  003.063: require('nord.theme')
+041.573  003.965  000.245: require('nord.util')
+042.471  000.895  000.895: require('bufferline.theme')
+042.476  006.058  001.198: require('nord')
+042.675  000.191  000.191: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.812  000.119  000.119: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.941  000.006  000.006: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.948  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.954  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.958  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.963  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.968  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.973  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.991  000.016  000.016: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+042.997  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.003  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.015  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.023  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.028  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.034  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.041  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.046  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.051  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.057  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.064  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.070  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.076  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.083  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.088  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.095  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.102  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.106  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.117  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.122  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.127  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.132  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.136  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.141  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.145  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.151  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.155  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.159  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.164  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.169  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.174  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.179  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.184  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.188  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.198  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.258  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.276  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.282  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.391  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.396  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.401  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.407  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.412  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.423  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.428  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.486  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.502  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.507  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.511  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.516  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.521  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.529  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.533  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.538  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.542  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.547  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.581  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.608  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.613  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.623  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.702  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.718  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.746  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.755  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.764  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.777  000.007  000.007: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.782  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.786  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.791  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.796  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.800  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.804  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.809  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.813  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.819  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.823  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.827  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.831  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.836  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.841  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.850  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.854  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.858  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.863  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.868  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.872  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.877  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.880  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.885  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.890  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.894  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.898  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.902  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.906  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.912  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.935  000.021  000.021: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.940  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.955  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.960  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.965  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.970  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.974  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.978  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+043.983  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.027  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.045  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.124  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.133  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.138  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.142  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.146  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.154  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.159  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.205  000.043  000.043: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.211  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.215  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.219  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.225  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.229  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.233  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.237  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.242  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.251  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.322  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.327  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.331  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.335  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.340  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.343  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.347  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.351  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.363  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.368  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.372  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.377  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.381  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.385  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.389  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.394  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.405  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.409  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.413  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.418  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.422  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.426  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.437  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.441  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.447  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.451  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.455  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.460  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.465  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.470  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.474  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.478  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.483  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.487  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.496  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.501  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.505  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.509  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.513  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.518  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.522  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.526  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.531  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.534  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.540  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.544  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.548  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.553  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.556  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.561  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.565  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.573  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.577  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.581  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.586  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.590  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.594  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.598  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.602  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.608  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.612  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.616  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.620  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.624  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.629  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.633  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.637  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.641  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.649  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.655  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.659  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.663  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.667  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.672  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.677  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.681  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.685  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.689  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.693  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.698  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.702  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.706  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.710  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.715  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.722  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.748  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.757  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.761  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.767  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.772  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.776  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.780  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.785  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.789  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.796  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.800  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.804  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.808  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.812  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.818  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.822  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.826  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.830  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.840  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.847  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.851  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.855  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.859  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.863  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.869  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.873  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.877  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.881  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.885  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.890  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.894  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.898  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.903  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.907  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.913  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.921  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.925  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.929  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.933  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.938  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.942  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.947  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.951  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.956  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.961  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.965  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.969  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.974  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.978  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.984  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+044.988  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.119  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.123  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.128  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.132  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.138  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.143  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.148  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.153  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.158  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.166  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.172  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.179  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.193  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.198  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.203  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.255  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.272  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.278  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.288  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.292  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.307  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.317  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.322  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.326  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.331  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.336  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.340  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.345  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.349  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.353  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.357  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.362  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.366  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.370  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.374  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.429  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.435  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.439  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.449  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.453  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.457  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.462  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.466  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.470  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.474  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.478  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.484  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.488  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.492  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.496  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.500  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.504  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.508  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.512  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.516  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.533  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.538  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.542  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.546  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.550  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.554  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.559  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.563  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.567  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.572  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.576  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.588  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.592  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.597  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.601  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.607  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.612  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.620  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.624  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.628  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.633  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.665  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.670  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.674  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.679  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.685  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.696  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.701  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.705  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.709  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.713  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.722  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.726  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.730  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.735  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.739  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.747  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.752  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.756  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.760  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.764  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.773  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.777  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.781  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.785  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.789  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.797  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.801  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.806  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.810  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.819  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.827  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.831  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.836  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.840  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.844  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.852  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.856  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.860  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.865  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.869  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.877  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.882  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.886  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.890  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.916  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.926  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.930  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.934  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.938  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.942  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.950  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.955  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.959  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.963  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.967  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.976  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.980  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.984  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.988  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+045.992  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.000  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.141  000.140  000.140: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.150  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.155  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.159  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.167  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.171  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.175  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.179  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.184  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.191  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.196  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.200  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.204  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.208  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.216  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.221  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.225  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.231  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.235  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.244  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.248  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.347  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.375  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.384  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.389  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.393  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.402  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.415  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.446  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.467  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.506  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.544  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.562  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.567  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.571  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.576  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.584  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.589  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.593  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.602  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.610  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.618  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.627  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.631  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.635  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.639  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.649  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.653  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.657  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.661  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.666  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.675  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.679  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.683  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.687  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.692  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.700  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.704  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.708  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.712  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.717  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.725  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.729  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.733  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.738  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.745  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.749  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.801  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.866  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.885  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.889  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.933  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.937  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.945  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.949  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.953  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.962  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.966  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.970  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.974  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.977  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.985  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.989  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.994  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+046.999  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.003  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.012  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.016  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.020  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.024  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.028  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.041  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.046  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.050  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.054  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.058  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.067  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.071  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.075  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.080  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.084  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.092  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.096  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.101  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.105  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.109  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.114  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.123  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.132  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.136  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.140  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.148  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.152  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.157  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.161  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.168  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.172  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.176  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.180  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.184  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.189  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.194  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.199  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.203  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.207  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.211  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.219  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.224  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.228  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.232  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.238  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.251  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.256  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.261  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.267  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.273  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.309  000.027  000.027: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.323  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.329  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.334  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.338  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.346  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.350  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.354  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.358  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.362  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.375  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.380  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.385  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.390  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.395  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.401  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.406  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.410  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.439  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.444  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.450  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.459  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.463  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.468  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.472  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.478  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.483  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.486  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.491  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.495  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.513  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.517  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.522  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.526  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.529  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.545  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.549  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.553  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.557  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.561  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.571  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.576  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.580  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.589  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.594  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.608  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.613  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.617  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.621  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.625  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.633  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.637  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.642  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.646  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.651  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.662  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.666  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.671  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.675  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.679  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.689  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.693  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.697  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.702  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.706  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.720  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.724  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.728  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.732  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.737  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.749  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.753  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.757  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.761  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.765  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.776  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.781  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.785  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.790  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.804  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.809  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.814  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.818  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.822  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.829  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.834  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.838  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.843  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.850  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.854  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.858  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.862  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.866  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.872  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.876  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.880  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.884  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.888  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.894  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.897  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.901  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.905  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.914  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.941  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.945  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.949  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.953  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.957  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.964  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.968  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.971  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.976  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.980  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.989  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.993  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+047.997  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.001  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.068  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.116  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.121  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.125  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.141  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.149  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.154  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.158  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.164  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.168  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.172  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.176  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.181  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.192  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.196  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.200  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.204  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.208  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.217  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.221  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.225  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.229  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.233  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.237  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.245  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.250  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.254  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.257  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.261  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.265  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.269  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.281  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.289  000.006  000.006: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.302  000.011  000.011: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.309  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.316  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.321  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+048.326  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+049.409  000.141  000.141: sourcing /home/tbraun/.local/share/nvim/lazy/plenary.nvim/plugin/plenary.vim
+049.428  000.263  000.121: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+049.439  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+049.482  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+050.625  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+050.657  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+051.630  000.130  000.130: sourcing /home/tbraun/.local/share/nvim/lazy/nvim-web-devicons/plugin/nvim-web-devicons.vim
+051.648  000.359  000.229: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+051.667  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+051.718  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+052.222  000.284  000.284: sourcing /home/tbraun/.local/share/nvim/lazy/neo-tree.nvim/plugin/neo-tree.lua
+052.255  000.420  000.136: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+052.266  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+052.311  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+054.335  001.860  001.860: require('neo-tree')
+054.738  000.397  000.397: require('neo-tree.log')
+054.993  000.006  000.006: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+055.036  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+056.764  000.224  000.224: require('plenary.bit')
+056.997  000.229  000.229: require('plenary.functional')
+057.038  000.750  000.296: require('plenary.path')
+057.076  001.015  000.266: require('plenary.log')
+057.136  001.297  000.282: require('lsp-file-operations.log')
+057.139  002.098  000.801: require('lsp-file-operations')
+061.269  000.385  000.385: require('neo-tree.utils._compat')
+061.308  000.805  000.420: require('neo-tree.utils')
+061.532  000.223  000.223: require('neo-tree.collections')
+061.789  000.253  000.253: require('neo-tree.health.typecheck')
+061.798  001.599  000.318: require('neo-tree.events.queue')
+061.801  001.935  000.337: require('neo-tree.events')
+064.580  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+064.625  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+066.092  000.234  000.234: require('mason-core.path')
+067.229  000.267  000.267: require('mason-core.functional.data')
+067.496  000.262  000.262: require('mason-core.functional.function')
+067.748  000.245  000.245: require('mason-core.functional.list')
+068.010  000.249  000.249: require('mason-core.functional.relation')
+068.248  000.232  000.232: require('mason-core.functional.logic')
+068.518  000.264  000.264: require('mason-core.functional.number')
+068.811  000.282  000.282: require('mason-core.functional.string')
+069.040  000.222  000.222: require('mason-core.functional.table')
+072.457  003.411  003.411: require('mason-core.functional.type')
+072.527  006.081  000.649: require('mason-core.functional')
+072.592  006.495  000.414: require('mason-core.platform')
+073.000  000.406  000.406: require('mason.settings')
+073.008  007.492  000.357: require('mason-core.installer.InstallLocation')
+073.830  000.313  000.313: require('mason-core.log')
+073.841  000.571  000.258: require('mason-core.EventEmitter')
+074.212  000.369  000.369: require('mason-registry.sources')
+074.223  001.212  000.272: require('mason-registry')
+074.226  009.569  000.865: require('mason')
+074.966  000.387  000.387: require('mason.api.command')
+075.165  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+075.209  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+076.650  000.300  000.300: sourcing /home/tbraun/.local/share/nvim/lazy/mason-tool-installer.nvim/plugin/mason-tool-installer.lua
+076.677  000.454  000.153: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+076.693  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+076.753  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+077.470  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+077.524  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+079.993  000.420  000.420: require('fidget.spinner.patterns')
+079.997  000.761  000.341: require('fidget.spinner')
+085.808  000.612  000.612: require('fidget.health')
+085.817  005.816  005.204: require('fidget.options')
+085.900  006.930  000.354: require('fidget.progress.display')
+086.591  000.351  000.351: require('fidget.logger')
+087.775  000.655  000.655: require('vim.lsp.log')
+089.492  001.712  001.712: require('vim.lsp.protocol')
+089.891  000.394  000.394: require('vim.lsp.util')
+090.292  000.186  000.186: require('vim.lsp.sync')
+090.300  000.403  000.217: require('vim.lsp._changetracking')
+090.727  000.205  000.205: require('vim.lsp._transport')
+090.752  000.449  000.244: require('vim.lsp.rpc')
+090.799  004.203  000.589: require('vim.lsp')
+091.279  000.246  000.246: require('vim.lsp.completion')
+091.308  000.505  000.259: require('vim.lsp.handlers')
+091.362  005.458  000.399: require('fidget.progress.lsp')
+092.288  000.231  000.231: require('fidget.poll')
+092.293  000.436  000.205: require('fidget.notification.model')
+092.531  000.235  000.235: require('fidget.notification.window')
+092.799  000.265  000.265: require('fidget.notification.view')
+092.813  001.160  000.225: require('fidget.notification')
+092.817  001.453  000.293: require('fidget.progress.handle')
+092.921  014.327  000.486: require('fidget.progress')
+093.197  000.273  000.273: require('fidget.commands')
+093.659  000.262  000.262: require('fidget.integration.nvim-tree')
+093.861  000.198  000.198: require('fidget.integration.xcodebuild-nvim')
+093.867  000.665  000.206: require('fidget.integration')
+093.924  016.373  001.107: require('fidget')
+094.306  000.012  000.012: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+094.365  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+095.140  000.326  000.326: require('lspconfig.util')
+095.158  000.565  000.239: sourcing /home/tbraun/.local/share/nvim/lazy/nvim-lspconfig/plugin/lspconfig.lua
+095.183  000.685  000.120: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+095.202  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+095.332  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+096.766  000.194  000.194: require('cmp_nvim_lsp.source')
+096.771  001.304  001.111: require('cmp_nvim_lsp')
+097.656  000.266  000.266: require('mason.version')
+097.669  000.569  000.303: require('mason-tool-installer')
+098.300  000.334  000.334: require('mason-lspconfig.settings')
+098.305  000.609  000.275: require('mason-lspconfig')
+099.579  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+099.621  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+102.128  001.284  001.284: require('lualine_require')
+103.530  003.894  002.610: require('lualine')
+104.403  000.028  000.028: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.811  000.028  000.028: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.834  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.853  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.862  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.871  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.882  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.890  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.903  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.910  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.918  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.929  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.939  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.946  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.958  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.966  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.974  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.984  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+106.995  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+107.116  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+107.146  000.020  000.020: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+111.921  002.259  002.259: require('lualine.utils.mode')
+113.517  000.035  000.035: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+113.542  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+116.686  000.022  000.022: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+116.700  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+116.715  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+116.728  000.009  000.009: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+124.712  000.039  000.039: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+124.809  000.009  000.009: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+124.834  000.020  000.020: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+124.845  000.006  000.006: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+124.856  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+127.357  000.277  000.277: sourcing /home/tbraun/.local/share/nvim/lazy/vim-bbye/plugin/bbye.vim
+127.383  000.452  000.175: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+127.424  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+127.491  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+127.634  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+127.678  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+129.618  000.333  000.333: require('bufferline.lazy')
+130.417  000.782  000.782: require('bufferline.commands')
+130.862  000.438  000.438: require('bufferline.config')
+130.882  003.183  001.630: require('bufferline')
+132.059  000.593  000.593: require('bufferline.utils')
+132.064  001.108  000.515: require('bufferline.groups')
+132.509  000.405  000.405: require('bufferline.constants')
+132.777  000.262  000.262: require('bufferline.colors')
+133.680  000.369  000.369: require('bufferline.highlights')
+135.249  000.346  000.346: require('vim.version')
+138.490  003.870  003.523: require('bufferline.hover')
+139.035  000.402  000.402: require('bufferline.ui')
+140.307  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+140.347  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+141.218  000.005  000.005: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+141.253  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+142.181  000.690  000.690: sourcing /home/tbraun/.local/share/nvim/lazy/telescope.nvim/plugin/telescope.lua
+142.220  000.833  000.143: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+142.233  000.004  000.004: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+142.289  000.003  000.003: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+144.231  000.257  000.257: require('plenary.strings')
+145.028  000.483  000.483: require('telescope.log')
+145.841  000.199  000.199: require('plenary.compat')
+145.851  000.476  000.278: require('plenary.job')
+146.143  000.289  000.289: require('telescope.state')
+146.363  000.207  000.207: require('vim.hl')
+147.280  000.189  000.189: require('vim.treesitter.language')
+147.506  000.221  000.221: require('vim.func')
+147.729  000.217  000.217: require('vim.func._memoize')
+147.762  000.901  000.274: require('vim.treesitter.query')
+147.991  000.226  000.226: require('vim.treesitter._range')
+148.007  001.399  000.272: require('vim.treesitter.languagetree')
+148.014  001.641  000.242: require('vim.treesitter')
+148.021  002.989  000.376: require('telescope.utils')
+148.029  003.794  000.322: require('telescope.sorters')
+156.962  013.345  009.293: require('telescope.config')
+157.902  000.299  000.299: require('plenary.window.border')
+158.283  000.377  000.377: require('plenary.window')
+158.530  000.242  000.242: require('plenary.popup.utils')
+158.547  001.571  000.653: require('plenary.popup')
+159.026  000.474  000.474: require('telescope.pickers.scroller')
+159.482  000.453  000.453: require('telescope.actions.state')
+159.822  000.336  000.336: require('telescope.actions.utils')
+160.573  000.346  000.346: require('telescope.actions.mt')
+160.598  000.771  000.425: require('telescope.actions.set')
+161.349  000.336  000.336: require('telescope.config.resolve')
+161.354  000.754  000.418: require('telescope.pickers.entry_display')
+161.673  000.317  000.317: require('telescope.from_entry')
+161.998  019.702  001.681: require('telescope.actions')
+162.489  000.488  000.488: require('telescope.builtin')
+163.207  000.395  000.395: require('telescope._extensions')
+163.216  000.722  000.327: require('telescope')
+163.526  000.303  000.303: require('telescope.themes')
+168.952  000.578  000.578: require('fzf_lib')
+168.962  001.196  000.619: require('telescope._extensions.fzf')
+169.248  000.277  000.277: require('telescope._extensions.ui-select')
+171.170  000.238  000.238: require('plenary.tbl')
+171.189  000.520  000.281: require('plenary.vararg.rotate')
+171.191  000.807  000.287: require('plenary.vararg')
+171.402  000.209  000.209: require('plenary.errors')
+171.413  001.263  000.248: require('plenary.async.async')
+172.379  000.206  000.206: require('plenary.async.structs')
+172.387  000.461  000.255: require('plenary.async.control')
+172.397  000.771  000.310: require('plenary.async.util')
+172.400  000.984  000.214: require('plenary.async.tests')
+172.403  002.542  000.295: require('plenary.async')
+172.917  000.511  000.511: require('telescope.debounce')
+173.462  000.541  000.541: require('telescope.mappings')
+173.887  000.420  000.420: require('telescope.pickers.highlights')
+174.258  000.367  000.367: require('telescope.pickers.window')
+174.694  000.431  000.431: require('telescope.pickers.layout')
+175.425  000.377  000.377: require('telescope.algos.linked_list')
+175.433  000.736  000.359: require('telescope.entry_manager')
+175.771  000.336  000.336: require('telescope.pickers.multi')
+175.803  006.550  000.666: require('telescope.pickers')
+176.889  000.658  000.658: require('telescope.make_entry')
+177.356  000.462  000.462: require('telescope.finders.async_static_finder')
+178.335  000.272  000.272: require('plenary.class')
+178.361  000.667  000.396: require('telescope._')
+178.364  001.005  000.337: require('telescope.finders.async_oneshot_finder')
+178.745  000.379  000.379: require('telescope.finders.async_job_finder')
+178.765  002.959  000.455: require('telescope.finders')
+179.059  000.266  000.266: require('vim.ui')
+179.610  000.013  000.013: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+179.651  000.002  000.002: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+185.034  000.314  000.314: require('window-picker.util')
+185.047  000.731  000.417: require('window-picker.filters.default-window-filter')
+185.305  000.256  000.256: require('window-picker.pickers.window-picker')
+185.951  000.306  000.306: require('window-picker.hints.statusline-hint')
+185.962  000.653  000.348: require('window-picker.hints.statusline-winbar-hint')
+186.289  000.325  000.325: require('window-picker.configurer')
+186.294  002.272  000.306: require('window-picker.builder')
+186.545  000.249  000.249: require('window-picker.config')
+186.553  006.896  004.375: require('window-picker')
+186.858  000.022  000.022: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+187.671  000.305  000.305: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/editorconfig.lua
+187.695  000.440  000.135: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+188.237  000.382  000.382: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/gzip.vim
+188.256  000.510  000.128: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+188.647  000.267  000.267: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/man.lua
+188.671  000.396  000.129: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+190.336  000.308  000.308: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/pack/dist/opt/matchit/plugin/matchit.vim
+190.412  001.631  001.322: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/matchit.vim
+190.426  001.737  000.106: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+190.788  000.263  000.263: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/matchparen.vim
+190.806  000.369  000.106: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+194.035  001.903  001.903: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/pack/dist/opt/netrw/plugin/netrwPlugin.vim
+194.141  003.221  001.319: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/netrwPlugin.vim
+194.156  003.339  000.118: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+194.697  000.388  000.388: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/osc52.lua
+194.721  000.532  000.144: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+199.781  004.947  004.947: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/rplugin.vim
+199.820  005.090  000.143: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+200.264  000.225  000.225: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/shada.vim
+200.282  000.430  000.206: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+200.547  000.138  000.138: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/spellfile.vim
+200.571  000.276  000.139: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+200.981  000.235  000.235: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tarPlugin.vim
+200.999  000.391  000.156: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+201.476  000.315  000.315: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tohtml.lua
+201.587  000.574  000.259: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+201.845  000.112  000.112: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/tutor.vim
+201.863  000.253  000.141: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+202.195  000.224  000.224: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/plugin/zipPlugin.vim
+202.212  000.340  000.117: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+203.253  000.296  000.296: sourcing /home/tbraun/.local/share/nvim/lazy/cmp-nvim-lsp/after/plugin/cmp_nvim_lsp.lua
+203.289  000.481  000.185: sourcing nvim_exec2() called at /home/tbraun/.config/nvim/init.lua:0
+203.407  186.158  052.706: sourcing /home/tbraun/.config/nvim/init.lua
+203.490  000.658: sourcing vimrc file(s)
+205.520  000.242  000.242: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/filetype.lua
+206.642  000.173  000.173: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/syntax/synload.vim
+206.760  000.872  000.699: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/syntax/syntax.vim
+206.790  002.185: inits 3
+217.177  010.387: reading ShaDa
+217.557  000.380: opening buffers
+218.245  000.445  000.445: require('bufferline.state')
+218.284  000.282: BufEnter autocommands
+218.291  000.007: editing files in windows
+218.443  000.152: VimEnter autocommands
+296.798  078.355: UIEnter autocommands
+301.321  003.607  003.607: sourcing /opt/nvim-linux-x86_64/share/nvim/runtime/autoload/provider/clipboard.vim
+301.353  000.948: before starting main loop
+302.306  000.314  000.314: require('bufferline.pick')
+302.603  000.293  000.293: require('bufferline.duplicates')
+302.959  000.034  000.034: sourcing nvim_exec2()
+302.971  000.363  000.329: require('bufferline.diagnostics')
+303.328  000.356  000.356: require('bufferline.models')
+303.333  001.687  000.361: require('bufferline.buffers')
+304.249  000.390  000.390: require('nvim-web-devicons.filetypes')
+305.408  000.845  000.845: require('nvim-web-devicons.default.icons_by_filename')
+312.278  006.864  006.864: require('nvim-web-devicons.default.icons_by_file_extension')
+312.657  000.367  000.367: require('nvim-web-devicons.default.icons_by_operating_system')
+312.943  000.281  000.281: require('nvim-web-devicons.default.icons_by_desktop_environment')
+313.217  000.270  000.270: require('nvim-web-devicons.default.icons_by_window_manager')
+313.221  008.938  000.310: require('nvim-web-devicons.icons-default')
+313.550  010.111  000.783: require('nvim-web-devicons')
+317.081  000.387  000.387: require('bufferline.numbers')
+317.506  000.224  000.224: require('bufferline.sorters')
+317.908  000.243  000.243: require('bufferline.tabpages')
+318.346  000.304  000.304: require('bufferline.offset')
+318.568  000.213  000.213: require('bufferline.custom_area')
+318.900  000.295  000.295: require('vim.iter')
+319.480  004.662: first screen update
+319.482  000.003: --- NVIM STARTED ---
+
