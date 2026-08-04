@@ -22,6 +22,10 @@ return {
     end,
   },
   {
+    -- Easier surround shortcuts
+    'tpope/vim-surround',
+  },
+  {
     -- Hints keybinds
     'folke/which-key.nvim',
     opts = {
