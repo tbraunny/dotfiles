@@ -1,0 +1,26 @@
+{
+  "$schema": "https://opencode.ai/config.json",
+  "provider": {
+    "ollama": {
+      "npm": "@ai-sdk/openai-compatible",
+      "name": "Ollama",
+      "options": {
+        "baseURL": "http://localhost:11434/v1"
+      },
+      "models": {
+        "gemma4-coder:latest": { // ctx should be >16k for tool calling
+          "name": "gemma4-coder"
+        },
+        "gemma4:latest": {
+          "name": "gemma4"
+        },
+        "coder:latest": {
+          "name": "qwen-coder"
+        },
+        "qwen2.5-coder:7b": {
+          "name": "qwen-agent-coder"
+        }
+      }
+    }
+  }
+}
