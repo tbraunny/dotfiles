@@ -21,6 +21,28 @@
           "name": "qwen-agent-coder"
         }
       }
+    },
+    "anthropic": {
+      "options": {
+        "baseURL": "https://api.anthropic.com/v1"
+      }
+      // "whitelist": [""] // only show the listed models when using '/models'
     }
-  }
+  },
+  "references": {
+    "env": {
+      "path": "~/.config",
+      "description": "Use for determining what will work within my environment configuration",
+    },
+  },
+  "mcp": {
+    "local-coder": {
+      "type": "local",
+      "command": [
+        "uv", "run", "--project",
+        "/home/tbraun/.mcp",
+        "python", "-m", "local_coder.server"
+      ]
+    },
+  },
 }
