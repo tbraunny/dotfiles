@@ -91,3 +91,6 @@ alias windows='cd /mnt/c/Users/thoma'
 alias coder="ollama run coder"
 alias ops="ollama ps"
 alias ollog="journalctl --user -u ollama -f"
+
+# List ssh hosts
+alias ssh-hosts="grep -i \"^host \" ~/.ssh/config"
